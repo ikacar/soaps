@@ -1,0 +1,87 @@
+.header{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.home{
+  height: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+}
+.home-img-1{
+  background-color: mediumorchid;
+  grid-column: 3 / span 5;
+  grid-row: 1 / span 6;
+} 
+.home-header{
+  background-color: mediumturquoise;
+  grid-column: 6 / span 6;
+  grid-row: 3 / span 2;
+}
+.home-info{
+  background-color: orange;
+  grid-column: 8 / span 4;
+  grid-row: 5 / span 2;
+}
+.home-since{
+  background-color: orangered;
+  grid-column: 4 / span 2;
+  grid-row: 8 / span 1;
+}
+.home-img-2{
+  background-color: rgb(18, 68, 18);
+  grid-column: 7 / span 7  ;
+  grid-row: 6 / span last-line;
+}
+.store{  
+  height: 700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+}
+.store-header{
+  background-color: palevioletred;
+  grid-column: 4 / span 2 ;
+  grid-row:  2 / span 5 ;
+}
+.store-category{
+  background-color: rebeccapurple;
+  grid-column: 4 / span 2 ;
+  grid-row: 3 / span 5;
+  display: grid;
+  grid-template-rows: repeat(5,1fr);
+}
+.store-products-list{
+  background-color: sandybrown;
+  grid-column: 6 / span 5 ;
+  grid-row:  3 / span 7; 
+}
+.about{
+  height: 1200px;
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-rows: repeat(10, 10%);
+}
+.about-img-1{
+  background-color: rgb(214, 114, 127);
+  grid-column: 2 / span 7 ;
+  grid-row:  1 / span 6;
+}
+.about-img-2 {
+  background-color: cornflowerblue;
+  grid-column: 4 / span 4;
+  grid-row: 4 / span 5;
+}
+
+.about-us-text{
+  background-color: greenyellow;
+  grid-column: 6 / span 7;
+  grid-row: 6 / span 7;
+
+}
+.gallery{
+  background-color: darkkhaki;
+}
+.contact{
+  background-color: darkred;
+}
