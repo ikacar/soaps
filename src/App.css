@@ -1,7 +1,5 @@
 .App{
   background-image: url(wood-back.jpg);
-  /* filter: blur(8px);
-  -webkit-filter: blur(8px); */
 
 }
 .header{
@@ -15,27 +13,49 @@
   grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
 }
 .home-img-1{
-  background-color: mediumorchid;
+  border-radius: 35px;
+  background-color: #b8733a;
   grid-column: 3 / span 5;
   grid-row: 1 / span 6;
 } 
+.home-img-src-1{
+
+  background-image: url(sapun1.png);
+  background-repeat: no-repeat;
+  grid-column: 2 / span 5;
+  grid-row: 2 / span 5;
+}
+.home-img-src-2{
+  background-image: url(sapun2.png);
+  background-repeat: no-repeat;
+  grid-column: 11 / span 7  ;
+  grid-row: 6 / span last-line;
+}
 .home-header{
-  background-color: mediumturquoise;
+  border-radius: 35px;
+
+  background-color:#372214;
   grid-column: 6 / span 6;
   grid-row: 3 / span 2;
 }
 .home-info{
-  background-color: orange;
+  border-radius: 35px;
+
+  background-color:#794228;
   grid-column: 8 / span 4;
   grid-row: 5 / span 2;
 }
 .home-since{
-  background-color: orangered;
+  border-radius: 35px;
+
+  background-color:#372214;
   grid-column: 4 / span 2;
   grid-row: 8 / span 1;
 }
 .home-img-2{
-  background-color: rgb(18, 68, 18);
+  border-radius: 35px;
+
+  background-color: #b8733a;
   grid-column: 7 / span 7  ;
   grid-row: 6 / span last-line;
 }

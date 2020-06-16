@@ -27,8 +27,9 @@ function Store() {
         </div>
         <div className="store-products-list"  data-aos="zoom-out-left"
             // data-aos-anchor="#example-anchor"
-            // data-aos-offset="500"
-            data-aos-duration="2000">
+            //  data-aos-offset="100"
+            data-aos-duration="2000"
+            >
             lavander-250, pine-250, lemon-250
         </div>
     </div>
