@@ -8,7 +8,7 @@ function Home() {
         Aos.init({duration:2000});
       },[]) 
   return (  
-    <div className="home">
+    <section className="home">
         
         <div className="home-img-1" data-aos="slide-left" data-aos-duration="1500">
             slika1
@@ -35,7 +35,7 @@ function Home() {
         <div className="home-img-src-2" data-aos="fade-up" data-aos-delay="1000"/>
 
         
-    </div>
+    </section>
   );
 }
 

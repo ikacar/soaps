@@ -1,0 +1,30 @@
+
+    {
+    
+        "items":    [
+        {  
+        "name":"lavanda",
+        "substances":"lavanda, ulje, mleko",
+        "price":"300 rsd",
+        "price10":"1500 rsd"
+        },
+        {
+            "name":"orah",
+            "substances":"orah, ulje, mleko",
+            "price":"300 rsd",
+            "price10":"1500 rsd"
+        },
+        {
+            "name":"limun",
+            "substances":"mleko, citrus, mleko",
+            "price":"300 rsd",
+            "price10":"1500 rsd"
+        },
+        {
+            "name":"karanfilic",
+            "substances":"karanfilic, mleko, karanfilic",
+            "price":"300 rsd",
+            "price10":"1500 rsd"
+        }
+        ]   
+        }
