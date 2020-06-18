@@ -3,7 +3,7 @@ import '../App.css';
 
 function Contact() {
   return (  
-    <div className="contact">
+    <section className="contact">
         <div className="contact-info">
             <div className="contact-header">
                 contact
@@ -35,7 +35,7 @@ function Contact() {
     <div className="contact-map">
         map
     </div>
-</div>
+</section>
 );
 }
 

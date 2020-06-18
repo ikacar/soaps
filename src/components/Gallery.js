@@ -3,7 +3,7 @@ import '../App.css';
 
 function Gallery() {
   return (  
-    <div className="gallery">
+    <section className="gallery">
         <div className="gallery-header">
           gallery
         </div>
@@ -13,7 +13,7 @@ function Gallery() {
         <div className="gallery-images">
           slike
         </div>
-    </div>
+    </section>
   );
 }
 

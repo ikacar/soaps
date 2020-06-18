@@ -1,16 +1,30 @@
+/* html, body{
+  height: 100vh;
+  overflow: hidden;
+} */
 .App{
   background-image: url(wood-back-new.jpg);
   background-attachment: fixed;
-  scroll-snap-points-y: repeat(300px);
+  /* scroll-snap-type: y mandatory;
+  overflow-y: scroll; */
   overflow-y: scroll;
+  height: 100vh;
+  /* scroll-snap-type: mandatory; */
+  scroll-snap-type: y mandatory;
+}
+section{
+  padding: 7em;
+  height: calc(100vh - 14em);
+  scroll-snap-align: center;
 }
 .header{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
+/* HOME */
 .home{
   scroll-snap-align: start;
-  height: 1000px;
+  /* height: 1000px; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
@@ -61,10 +75,10 @@
   grid-column: 7 / span 7  ;
   grid-row: 6 / span last-line;
 }
-
+/* HOME END */
 /* STORE  */
 .store{  
-  height: 700px;
+  /* height: 700px; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
@@ -131,8 +145,9 @@
 }
 /* STORE END */
 
+/* ABOUT */
 .about{
-  height: 1200px;
+  /* height: 1200px; */
   display: grid;
   grid-template-columns: repeat(14, 1fr);
   grid-template-rows: repeat(10, 10%);
@@ -154,14 +169,11 @@
   grid-row: 6 / span 7;
 
 }
+/* ABOUT END */
+
 .gallery{
   background-color: darkkhaki;
 }
 .contact{
   background-color: darkred;
-}
-.test{
-  height: 20px;
-  width: 50px;
-  background-color: blue;
 }

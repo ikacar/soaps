@@ -8,7 +8,7 @@ function About() {
     Aos.init({duration:2000});
   },[]) 
   return (  
-<   div className="about">
+<section className="about">
         <div className="about-img-1">
           slika1
         </div>
@@ -26,7 +26,7 @@ function About() {
         <div className="about-img-2">
             slika2
         </div>
-    </div>
+    </section>
   );
 }
 

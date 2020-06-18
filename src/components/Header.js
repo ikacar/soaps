@@ -3,7 +3,7 @@ import '../App.css';
 
 function Header() {
   return (  
-    <div className="header">
+    <section className="header">
         <div className="h-logo">
             Logo
         </div>
@@ -31,7 +31,7 @@ function Header() {
         <div className="h-email"> 
             Email
         </div>
-    </div>
+    </section>
   );
 }
 
