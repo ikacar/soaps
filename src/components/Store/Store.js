@@ -1,13 +1,11 @@
 import React , { useEffect }from 'react';
-import '../App.css';
+import '../../App.css';
 import StoreList from './StoreList'
-import LipBalmList from '../components/LipBalmList'
-import BathBombList from '../components/BathBombList'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import soapsJson from '../data/soaps.json'
-import bombsJson from '../data/bombs.json'
-import lipsJson from '../data/lips.json'
+import soapsJson from '../../data/soaps.json'
+import bombsJson from '../../data/bombs.json'
+import lipsJson from '../../data/lips.json'
 
 import {
   BrowserRouter as Router,

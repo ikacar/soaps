@@ -1,21 +1,13 @@
-/* html, body{
-  height: 100vh;
-  overflow: hidden;
-} */
+
 .App{
-  background-image: url(wood-back-new.jpg);
+  width: 100%;
+  background-color: khaki;
   background-attachment: fixed;
-  /* scroll-snap-type: y mandatory;
-  overflow-y: scroll; */
-  overflow-y: scroll;
-  height: 100vh;
-  /* scroll-snap-type: mandatory; */
-  scroll-snap-type: y mandatory;
+  background-image: url(wood-back-new.jpg);
 }
 section{
   padding: 7em;
   height: calc(100vh - 14em);
-  scroll-snap-align: center;
 }
 .header{
   display:grid;
@@ -23,7 +15,6 @@ section{
 }
 /* HOME */
 .home{
-  scroll-snap-align: start;
   /* height: 1000px; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -37,13 +28,13 @@ section{
 } 
 .home-img-src-1{
 
-  background-image: url(sapun1.png);
+  /* background-image: url(sapun1.png); */
   background-repeat: no-repeat;
   grid-column: 2 / span 5;
   grid-row: 2 / span 5;
 }
 .home-img-src-2{
-  background-image: url(sapun2.png);
+  /* background-image: url(sapun2.png); */
   background-repeat: no-repeat;
   grid-column: 11 / span 7  ;
   grid-row: 6 / span last-line;
@@ -126,7 +117,6 @@ section{
 
 }
 .store-item{
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(9, 1fr);
 }
@@ -147,7 +137,6 @@ section{
 
 /* ABOUT */
 .about{
-  /* height: 1200px; */
   display: grid;
   grid-template-columns: repeat(14, 1fr);
   grid-template-rows: repeat(10, 10%);
