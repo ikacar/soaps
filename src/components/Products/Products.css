@@ -1,63 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Arizonia');
+
 /* PRODUCTS */
 .products{
     display: grid;
-    grid-template-columns: 22.5% 22.5% 10% 22.5% 22.50%;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
-    background-color: gainsboro;
+    grid-template-columns: 22.5% 22.5% 5% 5% 22.5% 22.50%;
+    grid-template-rows: repeat(12,1fr);
+    background-color: #F3F3F3;
   }
+  /* TODO PROVERITI ILIJA SPAN */
   .soap-product{
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 3;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 5;
     display: grid;
-    background-color: wh; 
-    grid-template-columns: 70% 30%;
+    background-color: white;
+    grid-template-columns: 60% 30% 10%;
+    grid-template-rows: 1fr;
   }
   .soap-product-1{
-    grid-column: 1 / span 1;
-    background-color: lightblue;
+    height: 100%;
+    grid-column: 1 / span 2;
+    grid-row: 1 /span 1;
+    background-color: #B2DDEA;
   }
   .soap-product-2{
-    /* background-size: contain; */
-    /* background-image: url(sapun.PNG); */
-    grid-column: 2 / span 1;
-    background-color:powderblue;
-  }
-  .img1{
-    max-width: 100%;
-    max-height: 100%;
+    grid-column: 2 / span 2;
+    grid-row: 1 /span 1;
+    background-color: salmon;
+    /* background-color:powderblue;  */
   }
   .bath-product{
-    grid-column: 4 / span 2;    
-    grid-row: 2 /span 3;
-    background-color: wheat;
+    grid-column: 4 / span 3;    
+    grid-row: 5 /span 5;
+    background-color: white;
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 10% 30% 60%;
+    grid-template-rows: 1fr;
   }
   .bath-product-1{
-    grid-column: 2 / span 1;
-    background-color: lightgreen;
+    grid-column: 2 / span 2;
+    grid-row: 1 /span 1;
+    background-color: #C5CCBE;
+    /* background-color: lightgreen; */
   }
   .bath-product-2{
     background-size: contain;
-    /* background-image: url(bomba.PNG); */
-    grid-column: 1 / span 1;
-    background-color:powderblue;
+    background-color: salmon;
+    grid-row: 1 /span 1;
+    grid-column: 1 / span 2;
   }
   .lip-product{
-    grid-column: 1 / span 2;
-    grid-row: 4/span 3;
-    background-color: wheat;
+    grid-column: 1 / span 3;
+    grid-row: 8 /span 5;
+    background-color: white;
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 60% 30% 10%;
+    grid-template-rows: 1fr;
   }
   .lip-product-1{
-    grid-column: 1 / span 1;
-    background-color: palevioletred;
+    grid-column: 1 / span 2;
+    grid-row: 1 /span 1;
+    background-color: #DFD5CF;
+    /* background-color: palevioletred; */
   }
   .lip-product-2{
     background-size: contain;
     /* background-image: url(sapun2.PNG); */
-    grid-column: 2 / span 1;
-    background-color:powderblue;
+    background-color: salmon;
+    grid-row: 1 /span 1;
+    grid-column: 2 / span 2;
+  }
+  .wh-color{
+    /* font-family: 'Arizona', cursive; */
+    color:white;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   /* PRODUCTS-END */

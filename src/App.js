@@ -9,56 +9,71 @@ import Gallery from './components/Gallery/Gallery'
 import Contact from './components/Contact/Contact'
 import Products from './components/Products/Products'
 import ReactFullpage from '@fullpage/react-fullpage'
+import { TweenLite, TimelineMax,Power3, autoAlpha } from "gsap";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
+import { Power1 } from 'gsap/gsap-core';
 
-// class App extends Component {
-//   handleScroll = e => {
-//   console.log("ss")
-//   }
-//   render(){
-//     return (
-//       <ReactFullpage className="App" onScroll={this.handleScroll}
-//       licenseKey = {'YOUR_KEY_HERE'}
-//       scrollingSpeed = {1000} /* Options here */>
-//         {/* <Header/>  */}
-//         <Home/>
-//         <Products/>
-//         <Store/>
-//         <About/>
-//         <Gallery/>
-//         <Contact/>
-//       </ReactFullpage>
-//     );
-//   }
-  
-// }
+function onLeave(origin, destination, direction) {
+  console.log("Leaving section " + origin.index);
+  if(destination.index===1){
+    const section = destination.item
+    const soap = section.querySelector('.soap-product')
+    const bath = section.querySelector('.bath-product')
+    const lip = section.querySelector('.lip-product')
+
+    // const t1 = new TweenLite();
+    TweenLite.from(soap,1,{x:-1000,autoAlpha: 0, ease: Power1.easeOut, delay:0.3})
+    TweenLite.from(bath,1,{x:1000,autoAlpha: 0, ease: Power1.easeOut, delay:0.4})
+    TweenLite.from(lip,1,{x:-1000,autoAlpha: 0, ease: Power1.easeOut, delay:0.5})
+  }
+  else if(destination.index===2){
+    console.log("DRUGI bato ");
+  }
+  else if(destination.index===3){
+    console.log("TRECI bato ");
+  }
+  else if(destination.index===4){
+    console.log("CEE bato ");
+  }
+}
+
 const App = () => (
   <ReactFullpage
     //fullpage options
     licenseKey = {'YOUR_KEY_HERE'}
-    scrollingSpeed = {1000} /* Options here */
+    scrollingSpeed = {700} /* Options here */
+    navigation={true}
+    onLeave={onLeave}
 
     render={({ state, fullpageApi }) => {
       return (
         <ReactFullpage.Wrapper>
-          <section className="section">
-          <Home/>
-          </section>
-          <section className="section">
-          <Products/>
-          </section>
-          <section className="section">
-          <Products/>
-          </section>
+          <div className="section">
+            <Home/>
+          </div>
+          <div className="section">
+            <Products/> 
+          </div>
+          <div className="section">
+            <Store/>
+          </div>
+          <div className="section">
+            <About/>
+          </div>
+          <div className="section">
+            <Gallery/>
+          </div>
+          <div className="section">
+            <Contact/>
+          </div>
         </ReactFullpage.Wrapper>
       );
     }}
   />
 );
-
 export default App;
