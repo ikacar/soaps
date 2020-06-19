@@ -8,6 +8,7 @@ import About from './components/About/About'
 import Gallery from './components/Gallery/Gallery'
 import Contact from './components/Contact/Contact'
 import Products from './components/Products/Products'
+import ReactFullpage from '@fullpage/react-fullpage'
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,21 +16,49 @@ import {
   Link
 } from "react-router-dom";
 
-class App extends Component {
-  render(){
-    return (
-      <div className="App">
-        {/* <Header/>  */}
-        <Home/>
-        <Products/>
-        <Store/>
-        <About/>
-        <Gallery/>
-        <Contact/>
-      </div>
-    );
-  }
+// class App extends Component {
+//   handleScroll = e => {
+//   console.log("ss")
+//   }
+//   render(){
+//     return (
+//       <ReactFullpage className="App" onScroll={this.handleScroll}
+//       licenseKey = {'YOUR_KEY_HERE'}
+//       scrollingSpeed = {1000} /* Options here */>
+//         {/* <Header/>  */}
+//         <Home/>
+//         <Products/>
+//         <Store/>
+//         <About/>
+//         <Gallery/>
+//         <Contact/>
+//       </ReactFullpage>
+//     );
+//   }
   
-}
+// }
+const App = () => (
+  <ReactFullpage
+    //fullpage options
+    licenseKey = {'YOUR_KEY_HERE'}
+    scrollingSpeed = {1000} /* Options here */
+
+    render={({ state, fullpageApi }) => {
+      return (
+        <ReactFullpage.Wrapper>
+          <section className="section">
+          <Home/>
+          </section>
+          <section className="section">
+          <Products/>
+          </section>
+          <section className="section">
+          <Products/>
+          </section>
+        </ReactFullpage.Wrapper>
+      );
+    }}
+  />
+);
 
 export default App;
