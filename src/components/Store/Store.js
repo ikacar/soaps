@@ -20,13 +20,11 @@ function Store() {
   },[]) 
   return (  
     <section className="store">
-        <div className="store-header" data-aos="fade-up"
-            data-aos-duration="500">
+        <div className="store-header">
             store header  
         </div>
         <Router>
-        <div className="store-category" data-aos="fade-down"
-            data-aos-duration="2000">
+        <div className="store-category">
           <Link to="/store-soaps" style={{ textDecoration: 'none' }}>
           <div className="store-soaps">
                 SOAPS
@@ -45,8 +43,7 @@ function Store() {
           </div>
           </Link>
         </div>
-        <div className="store-products-list"  data-aos="zoom-out-left"
-            data-aos-duration="2000">
+        <div className="store-products-list">
             <div className='store-products-list-header'>
               <div className="store-product-list-name">
                 NAME
